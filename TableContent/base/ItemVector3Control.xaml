@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="TableContent.ItemVector3Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid DataContextChanged="Grid_DataContextChanged_1">
+        <Border Name="ItemBorder"
+                BorderBrush="{DynamicResource SliderSelectionBorder}"
+                BorderThickness="0"
+                Padding="0"
+                SnapsToDevicePixels="true">
+            <StackPanel Orientation="Horizontal" Name="ItemIDMultiValue">
+                <TextBox Name="VectorX" 
+                         Margin="0,0,5,0"
+                         Width="100"
+                         GotFocus="Item_GotFocus_1"
+                         LostFocus="Item_LostFocus_1">
+                </TextBox>
+                <TextBox Name="VectorY" 
+                         Margin="0,0,5,0"
+                         Width="100"
+                         GotFocus="Item_GotFocus_1"
+                         LostFocus="Item_LostFocus_1">
+                </TextBox>
+                <TextBox Name="VectorZ" 
+                         Margin="0,0,0,0"
+                         Width="100"
+                         GotFocus="Item_GotFocus_1"
+                         LostFocus="Item_LostFocus_1">
+                </TextBox>
+
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>

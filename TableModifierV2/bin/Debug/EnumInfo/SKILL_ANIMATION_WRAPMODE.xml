@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <enumColumn>
+    <enumName>正常</enumName>
+    <enumCode>WRAP_NORMAL</enumCode>
+    <enumValue>0</enumValue>
+    <enumDesc>播放一次后回到第一帧</enumDesc>
+  </enumColumn>
+  <enumColumn>
+    <enumName>倒播</enumName>
+    <enumCode>WRAP_PINGPONG</enumCode>
+    <enumValue>1</enumValue>
+    <enumDesc>播放一次后倒着播一次</enumDesc>
+  </enumColumn>
+  <enumColumn>
+    <enumName>循环</enumName>
+    <enumCode>WRAP_LOOP</enumCode>
+    <enumValue>2</enumValue>
+    <enumDesc>播放一次后从头播放</enumDesc>
+  </enumColumn>
+</root>

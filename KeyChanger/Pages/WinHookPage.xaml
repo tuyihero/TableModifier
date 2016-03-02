@@ -1,0 +1,33 @@
+﻿<UserControl x:Class="KeyChanger.WinHookPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <StackPanel Name="HookFrom">
+        
+        <StackPanel Orientation="Horizontal">
+            <Button Click="StartJoyStickHook" Width="100" Height="30" Margin="10,10,10,10">手柄钩</Button>
+            <Button Click="StartKeyboardHook" Width="100" Height="30" Margin="10,10,10,10">键盘钩</Button>
+            <Button Click="TestKeySend" Width="100" Height="30" Margin="10,10,10,10">测试</Button>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" >
+            <Label Content="应用窗口" Margin="5,5,5,5"/>
+            <ComboBox x:Name="WinList" Width="150" Height="30" SelectionChanged="ItemType_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Image Source="{Binding Icon}" Width="20" Height="20"></Image>
+                            <TextBlock Text="{Binding Title}" Margin="2,2,2,2" FontSize="{DynamicResource SmallFontSize}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+        </StackPanel>
+        
+        <TextBlock Name="TestBlock" Width="100" Height="30" Margin="10,10,0,0" HorizontalAlignment="Left" 
+                   Text="{Binding Path=Input}"></TextBlock>
+    </StackPanel>
+</UserControl>

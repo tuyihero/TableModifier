@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="TableCodeCreator.ShowTableCode"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <!--<Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <Button Name="TemplatePath" Width="300" Margin="10,0,10,0" Height="30"
+                    HorizontalContentAlignment="Left"
+                     Click="TemplatePath_MouseDown_1"
+                     Content="{Binding Path=TemplatePath, Mode=OneWay}"></Button>
+            <Button Name="CodePath" Width="300" Margin="0,0,10,0" Height="30"
+                    HorizontalContentAlignment="Left"
+                     Click="CodePath_MouseDown_1"
+                     Content="{Binding Path=CodePath, Mode=OneWay}"></Button>
+            <Button Width="150" Height="30" Click="Button_Click_1">SavePath</Button>
+            
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <TextBox Width="300" Height="30" Margin="10,10,5,10" 
+                       Text="{Binding Path=CodeTablePath, Mode=TwoWay}"
+                       ToolTip="{Binding Path=CodeTablePath, Mode=OneWay}"
+                       HorizontalAlignment="Center"
+                     HorizontalContentAlignment="Left"></TextBox>
+            <Button Height="30" Click="Button_SellectTargetPath"
+                    HorizontalContentAlignment="Center">路径</Button>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <Button Name="ResPath" Width="300" Margin="0,0,10,0" Height="30"
+                    HorizontalContentAlignment="Left"
+                     Click="Button_SellectResPath"
+                     Content="{Binding Path=ResTablePath, Mode=OneWay}"></Button>
+        </StackPanel>-->
+        <Button Width="200" Height="30" Click="Button_Click_2">CreateCode</Button>
+    </Grid>
+</UserControl>

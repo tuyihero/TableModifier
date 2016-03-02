@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <enumColumn>
+    <enumName>FixSkill</enumName>
+    <enumCode>SKILL_FIX</enumCode>
+    <enumValue>1</enumValue>
+    <enumDesc>固有技能</enumDesc>
+  </enumColumn>
+  <enumColumn>
+    <enumName>Area</enumName>
+    <enumCode>SKILL_AREA</enumCode>
+    <enumValue>2</enumValue>
+    <enumDesc>结界</enumDesc>
+  </enumColumn>
+  <enumColumn>
+    <enumName>Passive</enumName>
+    <enumCode>SKILL_PASSIVE</enumCode>
+    <enumValue>3</enumValue>
+    <enumDesc>被动</enumDesc>
+  </enumColumn>
+  <enumColumn>
+    <enumName>Normal</enumName>
+    <enumCode>SKILL_NORMAL</enumCode>
+    <enumValue>4</enumValue>
+    <enumDesc>一般</enumDesc>
+  </enumColumn>
+</root>

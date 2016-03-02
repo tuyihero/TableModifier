@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:UITemplate.Controls">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="PathContentFrame.xaml" />
+        <ResourceDictionary Source="PathBaseFrame.xaml" />
+        <ResourceDictionary Source="PathContentTransition.xaml" />
+        <ResourceDictionary Source="TabContentFrame.xaml" />
+        <ResourceDictionary Source="BoarderStyle.xaml" />
+        <ResourceDictionary Source="ComboBoxItemStyle.xaml" />
+        <ResourceDictionary Source="TextBlockStyle.xaml" />
+        <ResourceDictionary Source="ListContentFrame.xaml" />
+        <ResourceDictionary Source="ListBaseFrame.xaml" />
+        <ResourceDictionary Source="ErrorStyle.xaml" />
+        <ResourceDictionary Source="FilePathControl.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+    
+</ResourceDictionary>
+    
+    

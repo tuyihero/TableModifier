@@ -1,0 +1,60 @@
+﻿<mui:ModernWindow x:Class="MuiTest.MainWindow"
+                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                  xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+                  xmlns:kcr="http://tablemodify.com/KeyChanger"
+                  Title="MainWindow"
+                  WindowState ="Maximized"
+                  ContentSource="/Pages/UserControl1.xaml"
+                  FontFamily="宋体">
+    <mui:ModernWindow.TitleLinks>
+        <mui:Link DisplayName="Settings" Source="/Forms/Pages/Setting.xaml" />
+    </mui:ModernWindow.TitleLinks>
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="Welcome" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="INTRODUCTION" Source="/Forms/Pages/WelcomePage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="表格结构" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="表格" Source="/TableConstruct;component/Construct/Pages/ConstructPage.xaml" />
+                <mui:Link DisplayName="枚举" Source="/TableConstruct;component/Enums/Pages/EnumerateItems.xaml" />
+                <mui:Link DisplayName="结构" Source="/TableConstruct;component/InnerStruct/Pages/InnerStructInfos.xaml" />
+                <mui:Link DisplayName="配置" Source="/TableConstruct;component/GlobalConfig/Pages/ShowTableConfig.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="表格内容" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="表格" Source="/TableContent;component/Pages/ContentFileList.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="代码生成" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="表格代码" Source="/TableCodeCreator;component/Pages/ShowTableCode.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="按键转换" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="修改结构" Source="/KeyChanger;component/Pages/KeyChangerPage.xaml" />
+                <mui:Link DisplayName="转换应用" Source="/KeyChanger;component/Pages/WinHookPage.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="图片浏览" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="图片浏览" Source="/PictureShower;component/Pages/PictureContenter.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="其他功能" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="合并文件夹" Source="/DirectionCombine;component/Pages/DirectionPathControl.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        <mui:LinkGroup DisplayName="测试" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="测试" Source="/Pages/UserControl1.xaml" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+    </mui:ModernWindow.MenuLinkGroups>
+</mui:ModernWindow>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <enumColumn>
+    <enumName>test1</enumName>
+    <enumCode>test1</enumCode>
+    <enumValue>1</enumValue>
+    <enumDesc>测试1</enumDesc>
+  </enumColumn>
+  <enumColumn>
+    <enumName>test44</enumName>
+    <enumCode>test2</enumCode>
+    <enumValue>2</enumValue>
+    <enumDesc>ces2</enumDesc>
+  </enumColumn>
+</root>

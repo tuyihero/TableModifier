@@ -1,0 +1,12 @@
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.csprojResolveAssemblyReference.cache
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\bin\Debug\DirectionCombine.dll
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\bin\Debug\DirectionCombine.pdb
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\bin\Debug\FirstFloor.ModernUI.dll
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\bin\Debug\FrameStyle.dll
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\bin\Debug\FrameStyle.pdb
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\obj\Debug\Pages\DirectionPathControl.baml
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\obj\Debug\Pages\DirectionPathControl.g.cs
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine_MarkupCompile.cache
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.g.resources
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.dll
+D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.pdb
