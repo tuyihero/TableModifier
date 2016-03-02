@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\TableConstruct\obj\Debug\
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableConstruct\obj\Debug\
 TableConstruct
 none
 false
@@ -13,8 +13,8 @@ DEBUG;TRACE
 12-9912359
 
 44-416745490
-162118646460
+16286093815
 base\Pages\BaseListPanel.xaml;base\Pages\TypePanel.xaml;Construct\Pages\ConstructItemInfo.xaml;Construct\Pages\ConstructItemInfoPanel.xaml;Construct\Pages\ConstructItemList.xaml;Construct\Pages\ConstructPage.xaml;Construct\Pages\ConstructFileList.xaml;Construct\Pages\ConstructTableInfoPanel.xaml;Enums\Pages\EnumerateItems.xaml;GlobalConfig\Pages\ShowTableConfig.xaml;InnerStruct\Pages\InnerStructItemList.xaml;InnerStruct\Pages\InnerStructInfos.xaml;
 
-False
+True
 

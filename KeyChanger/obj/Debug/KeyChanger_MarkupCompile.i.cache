@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\
 KeyChanger
 none
 false
@@ -13,8 +13,8 @@ DEBUG;TRACE
 3-1833729502
 
 241427704143
-16535392677
+16-88078273
 Pages\KeyChangerPage.xaml;Pages\KeyCollectionControl.xaml;Pages\WinHookPage.xaml;
 
-False
+True
 

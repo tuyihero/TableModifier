@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\PictureShower\obj\Debug\
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\PictureShower\obj\Debug\
 PictureShower
 none
 false
@@ -13,8 +13,8 @@ DEBUG;TRACE
 32129335657
 
 92020130851
-18696787919
+18-2005738889
 Pages\PictureContenter.xaml;Pages\PictureList.xaml;Pages\PicturePathList.xaml;
 
-False
+True
 

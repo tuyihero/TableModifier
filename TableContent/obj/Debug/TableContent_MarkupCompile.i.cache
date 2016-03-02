@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\练习\C#项目\练习\WPF\TableModifierV2\TableModifier\TableModifierV2\TableContent\obj\Debug\
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableContent\obj\Debug\
 TableContent
 none
 false
@@ -13,8 +13,8 @@ DEBUG;TRACE
 71676891574
 
 32-1881811408
-17-2054263380
+17-576846750
 base\ContentItemBase.xaml;base\MultiTableControl.xaml;base\ItemVector3Control.xaml;Pages\ContentDataGrid.xaml;Pages\ContentDataTab.xaml;Pages\ContentFileList.xaml;Pages\ContentItemInfo.xaml;
 
-False
+True
 
