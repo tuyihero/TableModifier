@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <enumColumn>
+    <enumName>得分成就</enumName>
+    <enumCode>ACHIEVE_COMBO</enumCode>
+    <enumValue>1</enumValue>
+    <enumDesc>
+    </enumDesc>
+  </enumColumn>
+  <enumColumn>
+    <enumName>最终成就</enumName>
+    <enumCode>ACHIEVE_FINAL</enumCode>
+    <enumValue>2</enumValue>
+    <enumDesc>
+    </enumDesc>
+  </enumColumn>
+</root>

@@ -40,6 +40,15 @@ namespace TableConstruct
         public const string ITEM_TYPE_BASE_BOOL = "布尔";
         public const string ITEM_TYPE_BASE_VECTOR3 = "三元组";
 
+        //类型默认值
+        public const string ITEM_DEFAULT_VALUE_INT = "0";
+        public const string ITEM_DEFAULT_VALUE_FLOAT = "0";
+        public const string ITEM_DEFAULT_VALUE_STRING = "";
+        public const string ITEM_DEFAULT_VALUE_BOOL = "FALSE";
+        public const string ITEM_DEFAULT_VALUE_VECTOR3 = "0;0;0";
+        public const string ITEM_DEFAULT_VALUE_ENUM = "0";
+        public const string ITEM_DEFAULT_VALUE_TABLE = "";
+
         //默认项
         public const string NEW_FILE_DEFAULT_ID_NAME = "ID";
         public const string NEW_FILE_DEFAULT_ID_CODE = "Id";

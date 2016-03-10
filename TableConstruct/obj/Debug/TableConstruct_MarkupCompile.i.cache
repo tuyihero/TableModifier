@@ -16,5 +16,5 @@ DEBUG;TRACE
 16286093815
 base\Pages\BaseListPanel.xaml;base\Pages\TypePanel.xaml;Construct\Pages\ConstructItemInfo.xaml;Construct\Pages\ConstructItemInfoPanel.xaml;Construct\Pages\ConstructItemList.xaml;Construct\Pages\ConstructPage.xaml;Construct\Pages\ConstructFileList.xaml;Construct\Pages\ConstructTableInfoPanel.xaml;Enums\Pages\EnumerateItems.xaml;GlobalConfig\Pages\ShowTableConfig.xaml;InnerStruct\Pages\InnerStructItemList.xaml;InnerStruct\Pages\InnerStructInfos.xaml;
 
-True
+False
 

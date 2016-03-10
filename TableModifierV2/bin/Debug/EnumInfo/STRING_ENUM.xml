@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <enumColumn>
+    <enumName>新纪录标题</enumName>
+    <enumCode>STRENUM_HEIGHT_RECORD_TITLE</enumCode>
+    <enumValue>1</enumValue>
+    <enumDesc>
+    </enumDesc>
+  </enumColumn>
+</root>

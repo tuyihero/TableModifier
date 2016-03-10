@@ -215,7 +215,11 @@ namespace TableConstruct
 
         private void ComboBox_SelectionChanged_1(object sender, SelectionChangedEventArgs e)
         {
-            ComboBox comboBox = sender as ComboBox;
+            ConstructItem constructItem = this.DataContext as ConstructItem;
+            if (constructItem == null)
+                return;
+
+            constructItem.SetDefaultByType(e.AddedItems[0].ToString());
         }
 
         public void RefreshType()
