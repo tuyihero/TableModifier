@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="TableContent.ContentItemInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:tfs="http://tablemodify.com/FramStyle"
+             xmlns:construct="http://tablemodify.com/TableConstruct"
+             xmlns:local="clr-namespace:TableContent"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="3"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="0">
+            <construct:BaseListPanel x:Name="RowList" Grid.Row="1"
+                                     SelectEvent="Row_SelectionChanged"
+                                     RemoveEvent="MenuItem_Remove"
+                                     RenameEvent="MenuItem_Rename"
+                                     DragInsertEvent="BaseList_DragInsert"
+                                     Margin="0,0,3,0">
+            </construct:BaseListPanel>
+        </Grid>
+
+        <GridSplitter Grid.Column="1"/>
+
+        <ScrollViewer Grid.Column="2">
+            <ItemsControl x:Name="ItemValueList"  Margin="10,10,10,10">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <local:ContentItemBase>
+                        
+                        </local:ContentItemBase>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            
+            </ItemsControl>
+        </ScrollViewer>
+
+    </Grid >
+</UserControl>

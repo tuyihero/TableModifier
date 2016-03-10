@@ -1,0 +1,15 @@
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\bin\Debug\KeyChanger.dll
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\bin\Debug\KeyChanger.pdb
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\bin\Debug\FirstFloor.ModernUI.dll
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\Pages\KeyCollectionControl.baml
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\Pages\WinHookPage.baml
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\Pages\KeyChangerPage.g.cs
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\Pages\KeyCollectionControl.g.cs
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\Pages\WinHookPage.g.cs
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\KeyChanger_MarkupCompile.cache
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\KeyChanger_MarkupCompile.lref
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\Pages\KeyChangerPage.baml
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\KeyChanger.g.resources
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\KeyChanger.dll
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\KeyChanger\obj\Debug\KeyChanger.pdb

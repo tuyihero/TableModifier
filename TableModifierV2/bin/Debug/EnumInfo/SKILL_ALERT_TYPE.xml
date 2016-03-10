@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <enumColumn>
+    <enumName>AlertEnemy</enumName>
+    <enumCode>SKILL_ALERT_ENEMY</enumCode>
+    <enumValue>1</enumValue>
+    <enumDesc>减益技能警告</enumDesc>
+  </enumColumn>
+  <enumColumn>
+    <enumName>AlertFriend</enumName>
+    <enumCode>SKILL_ALERT_FRIEND</enumCode>
+    <enumValue>2</enumValue>
+    <enumDesc>增益技能警告</enumDesc>
+  </enumColumn>
+</root>

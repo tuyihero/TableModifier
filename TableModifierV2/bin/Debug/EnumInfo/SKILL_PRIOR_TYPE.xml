@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <enumColumn>
+    <enumName>Cover</enumName>
+    <enumCode>SKILL_PRIOR_COVER</enumCode>
+    <enumValue>1</enumValue>
+    <enumDesc>中断同优先级的技能</enumDesc>
+  </enumColumn>
+  <enumColumn>
+    <enumName>NotCover</enumName>
+    <enumCode>SKILL_PRIOR_NOT_COVER</enumCode>
+    <enumValue>2</enumValue>
+    <enumDesc>不中断同优先级技能</enumDesc>
+  </enumColumn>
+</root>

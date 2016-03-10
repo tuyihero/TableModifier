@@ -1,0 +1,16 @@
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\bin\Debug\TableCodeCreator.dll
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\bin\Debug\TableCodeCreator.pdb
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\bin\Debug\FirstFloor.ModernUI.dll
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\bin\Debug\FrameStyle.dll
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\bin\Debug\TableConstruct.dll
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\bin\Debug\TableContent.dll
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\bin\Debug\FrameStyle.pdb
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\bin\Debug\TableConstruct.pdb
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\bin\Debug\TableContent.pdb
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\obj\Debug\TableCodeCreator.csprojResolveAssemblyReference.cache
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\obj\Debug\Pages\ShowTableCode.baml
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\obj\Debug\Pages\ShowTableCode.g.cs
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\obj\Debug\TableCodeCreator_MarkupCompile.cache
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\obj\Debug\TableCodeCreator.g.resources
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\obj\Debug\TableCodeCreator.dll
+D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\obj\Debug\TableCodeCreator.pdb

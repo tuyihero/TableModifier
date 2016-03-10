@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="PictureShower.PictureList"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:tfs="http://tablemodify.com/FramStyle"
+             mc:Ignorable="d" >
+    <tfs:TabContentFrame Name="TabContent">
+        <tfs:TabContentFrame.RightContent>
+                <StackPanel Name="FormPanel" MouseWheel="lbMatFile_MouseWheel" Margin="10">
+        
+                    <ScrollViewer Name="scrollViewer" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+                        <StackPanel MouseWheel="lbMatFile_MouseWheel">
+                            <ItemsControl x:Name="imageList" MouseWheel="lbMatFile_MouseWheel">
+                    
+                    
+                            </ItemsControl>
+                        </StackPanel>
+                    </ScrollViewer>
+                </StackPanel>
+        </tfs:TabContentFrame.RightContent>
+    </tfs:TabContentFrame>
+</UserControl>

@@ -1,0 +1,56 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+    <Style x:Key="ErrorTextBox" Style.TargetType="{x:Type TextBox}" Style.BasedOn="{StaticResource {x:Type TextBoxBase}}" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <Setter Setter.Property="Validation.ErrorTemplate">
+            <Setter.Value>
+                <ControlTemplate>
+                    <StackPanel StackPanel.Orientation="Horizontal">
+                        <Border Border.BorderThickness="1" Border.BorderBrush="#FFDC000C" FrameworkElement.VerticalAlignment="Top">
+                            <Grid>
+                                <AdornedElementPlaceholder AdornedElementPlaceholder.Name="adorner" FrameworkElement.Margin="-1" />
+                            </Grid>
+                        </Border>
+                        <Border Border.Name="errorBorder" Border.Background="#FFDC000C" FrameworkElement.Margin="8,0,0,0" UIElement.Opacity="1" Border.CornerRadius="0" UIElement.IsHitTestVisible="False" FrameworkElement.MinHeight="24">
+                            <TextBlock TextBlock.Foreground="#FFFFFFFF" FrameworkElement.Margin="8,2,8,3" TextBlock.TextWrapping="Wrap" FrameworkElement.VerticalAlignment="Center" TextBlock.Text="{Binding ElementName=adorner,Path=AdornedElement.(Validation.Errors)[0].ErrorContent}" />
+                        </Border>
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ErrorComboBox" Style.TargetType="{x:Type ComboBox}" Style.BasedOn="{StaticResource {x:Type ComboBox}}" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <Setter Setter.Property="Validation.ErrorTemplate">
+            <Setter.Value>
+                <ControlTemplate>
+                    <StackPanel StackPanel.Orientation="Horizontal">
+                        <Border Border.BorderThickness="1" Border.BorderBrush="#FFDC000C" FrameworkElement.VerticalAlignment="Top">
+                            <Grid>
+                                <AdornedElementPlaceholder AdornedElementPlaceholder.Name="adorner" FrameworkElement.Margin="-1" />
+                            </Grid>
+                        </Border>
+                        <Border Border.Name="errorBorder" Border.Background="#FFDC000C" FrameworkElement.Margin="8,0,0,0" UIElement.Opacity="1" Border.CornerRadius="0" UIElement.IsHitTestVisible="False" FrameworkElement.MinHeight="24">
+                            <TextBlock TextBlock.Foreground="#FFFFFFFF" FrameworkElement.Margin="8,2,8,3" TextBlock.TextWrapping="Wrap" FrameworkElement.VerticalAlignment="Center" TextBlock.Text="{Binding ElementName=adorner,Path=AdornedElement.(Validation.Errors)[0].ErrorContent}" />
+                        </Border>
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+    <Style x:Key="ErrorCheckBox" Style.TargetType="{x:Type CheckBox}" Style.BasedOn="{StaticResource {x:Type CheckBox}}" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <Setter Setter.Property="Validation.ErrorTemplate">
+            <Setter.Value>
+                <ControlTemplate>
+                    <StackPanel StackPanel.Orientation="Horizontal">
+                        <Border Border.BorderThickness="1" Border.BorderBrush="#FFDC000C" FrameworkElement.VerticalAlignment="Top">
+                            <Grid>
+                                <AdornedElementPlaceholder AdornedElementPlaceholder.Name="adorner" FrameworkElement.Margin="-1" />
+                            </Grid>
+                        </Border>
+                        <Border Border.Name="errorBorder" Border.Background="#FFDC000C" FrameworkElement.Margin="8,0,0,0" UIElement.Opacity="1" Border.CornerRadius="0" UIElement.IsHitTestVisible="False" FrameworkElement.MinHeight="24">
+                            <TextBlock TextBlock.Foreground="#FFFFFFFF" FrameworkElement.Margin="8,2,8,3" TextBlock.TextWrapping="Wrap" FrameworkElement.VerticalAlignment="Center" TextBlock.Text="{Binding ElementName=adorner,Path=AdornedElement.(Validation.Errors)[0].ErrorContent}" />
+                        </Border>
+                    </StackPanel>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
