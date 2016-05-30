@@ -10,7 +10,9 @@ namespace TableConstruct
 {
     public class WriteConstruct
     {
-        public static void WriteAll()
+        private static string _ConfigPath = TableGlobalConfig.Instance.SelectedProject + ConstructConfig.CONSTUCT_FOLD_PATH;
+
+        public static void WriteProject()
         {
             ConstructFold.Instance.RemoveFiles.ForEach((file) =>
             {
@@ -27,8 +29,9 @@ namespace TableConstruct
 
         public static void DeleteFile(string name)
         {
-            string configPath = ConstructConfig.CONSTUCT_FOLD_PATH + "/" + name + ".xml";
-            File.Delete(configPath);
+            string configPath = _ConfigPath  + "\\" + name + ".xml";
+            if(File.Exists(configPath))
+                File.Delete(configPath);
         }
 
         public static void WriteFile(string name)
@@ -40,6 +43,19 @@ namespace TableConstruct
             }
         }
 
+        public static void WriteDirectroy(ConstructFile file)
+        {
+            string[] pathNames = file.Path.Split('\\');
+
+            for (int i = 0; i < pathNames.Length - 1; ++i)
+            {
+                if (string.IsNullOrEmpty(pathNames[i]))
+                {
+                    continue;
+                }
+            }
+        }
+
         public static void WriteFile(ConstructFile file)
         {
             if (file == null)
@@ -48,7 +64,13 @@ namespace TableConstruct
             if (!file.IsNeedWrite())
                 return;
 
-            string configPath = ConstructConfig.CONSTUCT_FOLD_PATH + "/" + file.Name + ".xml";
+            string configPath = TableGlobalConfig.Instance.ConstructTablePath + ConstructConfig.CONSTUCT_FOLD_PATH + file.Path + "\\" + file.Name + ".xml";
+            string diretPath = TableGlobalConfig.Instance.ConstructTablePath + ConstructConfig.CONSTUCT_FOLD_PATH + file.Path;
+            if (!Directory.Exists(diretPath))
+            {
+                Directory.CreateDirectory(diretPath);
+            }
+
             XmlDocument xmlDoc = new XmlDocument();
             if (!File.Exists(configPath))
             {
@@ -126,7 +148,7 @@ namespace TableConstruct
             if (file == null)
                 return;
 
-            string configPath = ConstructConfig.CONSTUCT_FOLD_PATH + "/" + file.Name + ".xml";
+            string configPath = TableGlobalConfig.Instance.SelectedProject + ConstructConfig.CONSTUCT_FOLD_PATH + "/" + file.Name + ".xml";
             if (!File.Exists(configPath))
             {
                 return;

@@ -30,21 +30,26 @@ namespace TableConstruct
         private bool _Init = false;
         public void InitFold()
         {
+            if (string.IsNullOrEmpty(TableGlobalConfig.Instance.SelectedProject))
+            {
+                return;
+            }
+
             if (!_Init)
             {
-                TableGlobalConfig.Instance.Init();
-                ReadConstruct.ReadAll();
-                ReadEnuminfos.ReadAll();
-                ReadInnerStruct.ReadAll();
+                TableGlobalConfig.Instance.InitProject();
+                ReadConstruct.ReadProject();
+                ReadEnuminfos.ReadProject();
+                ReadInnerStruct.ReadProject();
                 _Init = true;
             }
         }
 
         public void Save()
         {
-            WriteConstruct.WriteAll();
-            WriteEnuminfos.WriteAll();
-            WriteInnerStruct.WriteAll();
+            WriteConstruct.WriteProject();
+            WriteEnuminfos.WriteProject();
+            WriteInnerStruct.WriteProject();
         }
         #endregion
 
@@ -60,11 +65,13 @@ namespace TableConstruct
             ConstructFiles.AddNewItem(file);
         }
 
-        public void CreateNewFile(string name)
+        public ConstructFile CreateNewFile(string name)
         {
             ConstructFile file = new ConstructFile(name);
             AddFile(file);
             ModifyFiles.Add(file.Name);
+
+            return file;
         }
 
         public void RemoveFile(string name)

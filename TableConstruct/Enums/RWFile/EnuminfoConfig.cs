@@ -8,7 +8,7 @@ namespace TableConstruct
 {
     public class EnuminfoConfig
     {
-        public static string ENUMINFO_FOLD_PATH = "./EnumInfo";
+        public static string ENUMINFO_FOLD_PATH = "/EnumInfo";
 
         //新建XML信息
         public const string INIT_VERSION_STR = "1.0";

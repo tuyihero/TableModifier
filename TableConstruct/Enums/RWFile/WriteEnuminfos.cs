@@ -10,7 +10,7 @@ namespace TableConstruct
 {
     public class WriteEnuminfos
     {
-        public static void WriteAll()
+        public static void WriteProject()
         {
             EnumManager.Instance.RemoveFiles.ForEach((file) =>
             {
@@ -25,7 +25,7 @@ namespace TableConstruct
 
         public static void DeleteFile(string name)
         {
-            string configPath = EnuminfoConfig.ENUMINFO_FOLD_PATH + "/" + name + ".xml";
+            string configPath = TableGlobalConfig.Instance.SelectedProject + EnuminfoConfig.ENUMINFO_FOLD_PATH + "/" + name + ".xml";
             File.Delete(configPath);
         }
 
@@ -38,7 +38,7 @@ namespace TableConstruct
             if (!file.IsNeedWrite())
                 return;
 
-            string configPath = EnuminfoConfig.ENUMINFO_FOLD_PATH + "/" + file.Name + ".xml";
+            string configPath = TableGlobalConfig.Instance.ConstructTablePath + EnuminfoConfig.ENUMINFO_FOLD_PATH + "/" + file.Name + ".xml";
             XmlDocument xmlDoc = new XmlDocument();
             if (!File.Exists(configPath))
             {

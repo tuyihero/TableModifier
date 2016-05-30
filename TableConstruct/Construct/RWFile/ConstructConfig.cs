@@ -8,7 +8,7 @@ namespace TableConstruct
 {
     public class ConstructConfig
     {
-        public static string CONSTUCT_FOLD_PATH = "./TableConstruct";
+        public static string CONSTUCT_FOLD_PATH = "\\TableConstruct\\";
 
         //新建XML信息
         public const string INIT_VERSION_STR = "1.0";
@@ -48,6 +48,9 @@ namespace TableConstruct
         public const string ITEM_DEFAULT_VALUE_VECTOR3 = "0;0;0";
         public const string ITEM_DEFAULT_VALUE_ENUM = "0";
         public const string ITEM_DEFAULT_VALUE_TABLE = "";
+
+        public const string ITEM_DEFAULT_VALUE_ENUM_CODE = "None";
+        public const string ITEM_DEFAULT_VALUE_ENUM_DESC = "枚举必须保留0值";
 
         //默认项
         public const string NEW_FILE_DEFAULT_ID_NAME = "ID";

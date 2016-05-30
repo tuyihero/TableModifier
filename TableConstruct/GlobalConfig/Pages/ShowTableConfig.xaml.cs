@@ -25,7 +25,7 @@ namespace TableConstruct
             InitializeComponent();
 
             this.DataContext = TableGlobalConfig.Instance;
-            TableGlobalConfig.Instance.Init();
+            TableGlobalConfig.Instance.InitProject();
         }
 
         private void TemplatePath_MouseDown_1(object sender, RoutedEventArgs e)
@@ -59,7 +59,10 @@ namespace TableConstruct
             fbd.ShowDialog();
             if (fbd.SelectedPath != string.Empty)
             {
-                TableGlobalConfig.Instance.CodeTablePath = fbd.SelectedPath;
+                TableGlobalConfig.Instance.ProjectPath = fbd.SelectedPath;
+                TableGlobalConfig.Instance.ConstructTablePath = fbd.SelectedPath + TableGlobalDefine.ELEMENT_DEFAULT_CONSTRUCT_PATH;
+                TableGlobalConfig.Instance.ResTablePath = fbd.SelectedPath + TableGlobalDefine.ELEMENT_DEFAULT_RESOURCE_PATH;
+                TableGlobalConfig.Instance.CodePath = fbd.SelectedPath + TableGlobalDefine.ELEMENT_DEFAULT_CODE_PATH;
             }
         }
 

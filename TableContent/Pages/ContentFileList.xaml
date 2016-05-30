@@ -20,12 +20,14 @@
                 <Button Click="Button_New" Width="80" Height="25" Margin="0,0,10,0">New</Button>
                 <Button Click="Button_Save" Width="80" Height="25" Margin="0,0,10,0">Save</Button>
             </StackPanel>
-            <construct:BaseListPanel x:Name="LinkList" Grid.Row="1"
+            <construct:BaseTreePanel x:Name="LinkList" 
+                                     Grid.Row="1"
                                  SelectEvent="LinkList_SelectionChanged"
                                  RemoveEvent="MenuItem_Remove"
-                                 RenameEvent="MenuItem_Rename">
+                                 RenameEvent="MenuItem_Rename"
+                                     NewItemEvent="Button_New">
 
-            </construct:BaseListPanel>
+            </construct:BaseTreePanel>
         </Grid>
 
         <GridSplitter Grid.Column="1"/>

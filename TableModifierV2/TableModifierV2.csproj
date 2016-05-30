@@ -147,6 +147,10 @@
     <Folder Include="Structure\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Collada4Res\Collada4Res.csproj">
+      <Project>{63d53870-0b68-48e7-aa97-b97c9c912f1a}</Project>
+      <Name>Collada4Res</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DirectionCombine\DirectionCombine.csproj">
       <Project>{d4566d07-ce6c-49db-a991-1b5826e7e8ba}</Project>
       <Name>DirectionCombine</Name>

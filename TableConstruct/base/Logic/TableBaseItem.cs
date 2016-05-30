@@ -135,6 +135,23 @@ namespace TableConstruct
                 OnPropertyChanged("ErrorMsg");
             }
         }
+
+        private string _Path = "";
+        public string Path
+        {
+            get
+            {
+                return _Path;
+            }
+            set
+            {
+                _Path = value;
+                if (string.IsNullOrEmpty(value))
+                {
+                    int tet = 1 + 1;
+                }
+            }
+        }
         #endregion
 
         #region 逻辑属性
@@ -172,6 +189,16 @@ namespace TableConstruct
                 }
             }
         }
+
+        protected TableBaseCollection _ChilCollection = new TableBaseCollection();
+        public TableBaseCollection ChilCollection
+        {
+            get 
+            {
+                return _ChilCollection;
+            }
+        }
+
         #endregion
     }
 }

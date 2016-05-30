@@ -584,8 +584,9 @@ namespace TableCodeCreator
 
                 //readBuilder.Append("            " + constructFile.Name
                 //    + " = new " + constructFile.Name + "(\"" + TableGlobalConfig.Instance.CodeTablePath + constructFile.Name + ".csv\");\n");
+                string filePath = constructFile.Path.Replace("\\", "/") + constructFile.Name;
                 readBuilder.Append("            " + constructFile.Name
-                    + " = new " + constructFile.Name + "(TableReadBase.GetTableText(\"" + constructFile.Name + "\"), false);\n");
+                    + " = new " + constructFile.Name + "(TableReadBase.GetTableText(\"" + filePath + "\"), false);\n");
 
                 initBuilder.Append("            " + constructFile.Name + ".CoverTableContent();\n");
             }

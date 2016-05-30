@@ -55,7 +55,7 @@ namespace TableConstruct
         #region 事件
         private void Button_Save(object sender, RoutedEventArgs e)
         {
-            WriteEnuminfos.WriteAll();
+            WriteEnuminfos.WriteProject();
         }
 
         private void Button_NewInfo(object sender, RoutedEventArgs e)

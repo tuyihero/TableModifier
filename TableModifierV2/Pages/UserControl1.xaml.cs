@@ -20,6 +20,8 @@ using UITemplate.Controls;
 using KeyChanger;
 using TableConstruct;
 
+using Collada4Res;
+
 namespace TableModifierV2.Pages
 {
     /// <summary>
@@ -35,7 +37,9 @@ namespace TableModifierV2.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            WriteCollada.Instance.WriteFile("./Collada", "ColladaTest", WriteCollada.Instance._TestPos, 
+                WriteCollada.Instance._TestNormal, WriteCollada.Instance._TestPoly, WriteCollada.Instance._TestPolyCount
+                , WriteCollada.Instance._TestMatrix);
         }
 
     }

@@ -10,35 +10,49 @@
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <StackPanel Orientation="Horizontal" Grid.Row="0">
+            <TextBlock Text="代码模板位置" Margin="0,0,0,10"></TextBlock>
+        </StackPanel>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
             <Button Name="TemplatePath" Width="300" Margin="10,0,10,0" Height="30"
                     HorizontalContentAlignment="Left"
                      Click="TemplatePath_MouseDown_1"
                      Content="{Binding Path=TemplatePath, Mode=OneWay}"></Button>
-            <Button Name="CodePath" Width="300" Margin="0,0,10,0" Height="30"
+            <!--<Button Name="CodePath" Width="300" Margin="0,0,10,0" Height="30"
                     HorizontalContentAlignment="Left"
                      Click="CodePath_MouseDown_1"
-                     Content="{Binding Path=CodePath, Mode=OneWay}"></Button>
+                     Content="{Binding Path=CodePath, Mode=OneWay}"></Button>-->
             <Button Width="150" Height="30" Click="Button_Click_1">SavePath</Button>
             
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Grid.Row="1">
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="2">
+            <TextBlock Text="表格结构位置" Margin="0,30,0,0"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="3">
             <TextBox Width="300" Height="30" Margin="10,10,5,10" 
-                       Text="{Binding Path=CodeTablePath, Mode=TwoWay}"
-                       ToolTip="{Binding Path=CodeTablePath, Mode=OneWay}"
+                       Text="{Binding Path=ProjectPath, Mode=TwoWay}"
+                       ToolTip="{Binding Path=ProjectPath, Mode=OneWay}"
                        HorizontalAlignment="Center"
                      HorizontalContentAlignment="Left"></TextBox>
             <Button Height="30" Click="Button_SellectTargetPath"
                     HorizontalContentAlignment="Center">路径</Button>
         </StackPanel>
-
-        <StackPanel Orientation="Horizontal" Grid.Row="2">
+        
+        <!--<StackPanel Orientation="Horizontal" Grid.Row="4">
+            <TextBlock Text="表格资源位置" Margin="0,20,0,10"></TextBlock>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Grid.Row="5">
             <Button Name="ResPath" Width="300" Margin="0,0,10,0" Height="30"
                     HorizontalContentAlignment="Left"
                      Click="Button_SellectResPath"
                      Content="{Binding Path=ResTablePath, Mode=OneWay}"></Button>
-        </StackPanel>
+        </StackPanel>-->
     </Grid>
 </UserControl>

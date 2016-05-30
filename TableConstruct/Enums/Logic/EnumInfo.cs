@@ -30,6 +30,14 @@ namespace TableConstruct
 
         public EnumItemCollection _EnumItemCollection = new EnumItemCollection();
 
+        public void InitNewEnum()
+        {
+            _EnumItemCollection.AddNewItem(new EnumItem() { ItemValue = ConstructConfig.ITEM_DEFAULT_VALUE_ENUM, 
+                ItemCode = ConstructConfig.ITEM_DEFAULT_VALUE_ENUM_CODE,
+                ItemDesc = ConstructConfig.ITEM_DEFAULT_VALUE_ENUM_DESC
+            });
+        }
+
         public void CreateEnumItem()
         {
             _EnumItemCollection.AddNewItem(new EnumItem() { ItemValue = _EnumItemCollection.GetNewItemValue().ToString() });

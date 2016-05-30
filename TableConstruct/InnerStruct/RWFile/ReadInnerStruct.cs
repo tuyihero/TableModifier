@@ -10,14 +10,15 @@ namespace TableConstruct
 {
     public class ReadInnerStruct
     {
-        public static void ReadAll()
+        public static void ReadProject()
         {
-            if (!Directory.Exists(InnerStructConfig.INNERSTRUCT_FOLD_PATH))
+            string foldPath = TableGlobalConfig.Instance.ConstructTablePath + InnerStructConfig.INNERSTRUCT_FOLD_PATH;
+            if (!Directory.Exists(foldPath))
             {
-                Directory.CreateDirectory(InnerStructConfig.INNERSTRUCT_FOLD_PATH);
+                Directory.CreateDirectory(foldPath);
             }
 
-            DirectoryInfo TheFolder = new DirectoryInfo(InnerStructConfig.INNERSTRUCT_FOLD_PATH);
+            DirectoryInfo TheFolder = new DirectoryInfo(foldPath);
             foreach (FileInfo fileInfo in TheFolder.GetFiles())
             {
                 if (fileInfo.Extension == ".xml")

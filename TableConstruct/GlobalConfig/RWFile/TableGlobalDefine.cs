@@ -22,9 +22,13 @@ namespace TableConstruct
         public const string ELEMENT_CODE_PATH = "CodePath";
         public const string ELEMENT_CODE_TABLE_PATH = "CodeTablePath";
         public const string ELEMENT_RES_TABLE_PATH = "ResTablePath";
+        public const string ELEMENT_PROJECT_PATH = "ProjectPath";
         
 
-        public const string ELEMENT_DEFAULT_TEMPLATE_PATH = "./TableCodeTemplate";  
+        public const string ELEMENT_DEFAULT_TEMPLATE_PATH = "./TableCodeTemplate";
+        public const string ELEMENT_DEFAULT_CONSTRUCT_PATH = "\\Tables\\Construct";
+        public const string ELEMENT_DEFAULT_CODE_PATH = "\\Tables\\Code";
+        public const string ELEMENT_DEFAULT_RESOURCE_PATH = "\\Resources\\Tables"; 
 
     }
 }

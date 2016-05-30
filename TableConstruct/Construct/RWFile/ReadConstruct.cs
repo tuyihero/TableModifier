@@ -10,18 +10,42 @@ namespace TableConstruct
 {
     public class ReadConstruct
     {
-        public static void ReadAll()
+        private static string _ConstructPath = TableGlobalConfig.Instance.ConstructTablePath + ConstructConfig.CONSTUCT_FOLD_PATH;
+
+        public static void ReadProject()
         {
-            if (!Directory.Exists(ConstructConfig.CONSTUCT_FOLD_PATH))
+            //string constructPath = TableGlobalConfig.Instance.ConstructTablePath + ConstructConfig.CONSTUCT_FOLD_PATH;
+            if (!Directory.Exists(_ConstructPath))
             {
-                Directory.CreateDirectory(ConstructConfig.CONSTUCT_FOLD_PATH);
+                Directory.CreateDirectory(_ConstructPath);
             }
 
-            DirectoryInfo TheFolder = new DirectoryInfo(ConstructConfig.CONSTUCT_FOLD_PATH);
+            DirectoryInfo TheFolder = new DirectoryInfo(_ConstructPath);
             foreach (FileInfo fileInfo in TheFolder.GetFiles())
             {
                 if (fileInfo.Extension == ".xml")
                     ReadFile(fileInfo);
+            }
+
+            foreach (DirectoryInfo directInfo in TheFolder.GetDirectories())
+            {
+                ReadDirect(directInfo);
+            }
+        }
+
+        public static void ReadDirect(DirectoryInfo directInfo)
+        {
+            ConstructFile file = new ConstructFile(directInfo.Name, false);
+
+            foreach (FileInfo fileInfo in directInfo.GetFiles())
+            {
+                if (fileInfo.Extension == ".xml")
+                    ReadFile(fileInfo);
+            }
+
+            foreach (DirectoryInfo direct in directInfo.GetDirectories())
+            {
+                ReadDirect(direct);
             }
         }
 
@@ -35,6 +59,8 @@ namespace TableConstruct
                 string fileName = fileInfo.Name.Remove(fileInfo.Name.LastIndexOf("."));
                 ConstructFile file = new ConstructFile(fileName, false);
                 ConstructFold.Instance.AddFile(file);
+
+                file.Path = fileInfo.FullName.Replace(_ConstructPath, "").Replace(fileInfo.Name, "");
 
                 XmlNode root = xmlDoc.SelectSingleNode(ConstructConfig.DOC_ROOT_STR);
                 foreach (XmlElement childElement in root.ChildNodes.OfType<XmlElement>())

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\DirectionCombine\obj\Debug\
+D:\tools\TableModifierV2\DirectionCombine\obj\Debug\
 DirectionCombine
 none
 false
@@ -12,8 +12,8 @@ DEBUG;TRACE
 
 1826023781
 
-6-1614229557
-15-1110751200
+6822051036
+15-241109502
 Pages\DirectionPathControl.xaml;
 
 False

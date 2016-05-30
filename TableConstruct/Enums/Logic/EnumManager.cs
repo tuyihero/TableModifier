@@ -41,6 +41,7 @@ namespace TableConstruct
                 return null;
 
             EnumInfo enumInfo = new EnumInfo();
+            enumInfo.InitNewEnum();
             enumInfo.Name = name;
             EnumInfoCollection.AddNewItem(enumInfo);
 

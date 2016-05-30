@@ -1,10 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableModifierV2", "TableModifierV2\TableModifierV2.csproj", "{51FFCA60-FE05-4186-B714-856515BD165B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{D4566D07-CE6C-49DB-A991-1B5826E7E8BA} = {D4566D07-CE6C-49DB-A991-1B5826E7E8BA}
 		{665EF15F-7A22-437B-BBBD-56BD8826DA03} = {665EF15F-7A22-437B-BBBD-56BD8826DA03}
+		{63D53870-0B68-48E7-AA97-B97C9C912F1A} = {63D53870-0B68-48E7-AA97-B97C9C912F1A}
 		{44E66AC6-2840-4C94-A7C4-81B07C1F12CC} = {44E66AC6-2840-4C94-A7C4-81B07C1F12CC}
 		{52FE66CD-BAC0-4047-BDD1-8F9A580888F2} = {52FE66CD-BAC0-4047-BDD1-8F9A580888F2}
 		{9631DCD1-0C3F-4F29-8E3C-023403966C4D} = {9631DCD1-0C3F-4F29-8E3C-023403966C4D}
@@ -23,6 +26,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TableCodeCreator", "TableCodeCreator\TableCodeCreator.csproj", "{44E66AC6-2840-4C94-A7C4-81B07C1F12CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DirectionCombine", "DirectionCombine\DirectionCombine.csproj", "{D4566D07-CE6C-49DB-A991-1B5826E7E8BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Collada4Res", "Collada4Res\Collada4Res.csproj", "{63D53870-0B68-48E7-AA97-B97C9C912F1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -88,6 +93,14 @@ Global
 		{D4566D07-CE6C-49DB-A991-1B5826E7E8BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4566D07-CE6C-49DB-A991-1B5826E7E8BA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4566D07-CE6C-49DB-A991-1B5826E7E8BA}.Release|x64.ActiveCfg = Release|Any CPU
+		{63D53870-0B68-48E7-AA97-B97C9C912F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{63D53870-0B68-48E7-AA97-B97C9C912F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{63D53870-0B68-48E7-AA97-B97C9C912F1A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{63D53870-0B68-48E7-AA97-B97C9C912F1A}.Debug|x64.Build.0 = Debug|Any CPU
+		{63D53870-0B68-48E7-AA97-B97C9C912F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{63D53870-0B68-48E7-AA97-B97C9C912F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{63D53870-0B68-48E7-AA97-B97C9C912F1A}.Release|x64.ActiveCfg = Release|Any CPU
+		{63D53870-0B68-48E7-AA97-B97C9C912F1A}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

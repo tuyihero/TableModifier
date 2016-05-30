@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableCodeCreator\obj\Debug\
+D:\tools\TableModifierV2\TableCodeCreator\obj\Debug\
 TableCodeCreator
 none
 false
@@ -12,8 +12,8 @@ DEBUG;TRACE
 
 11500027483
 
-7-515705345
-171691118281
+71920575248
+17-1804353143
 Pages\ShowTableCode.xaml;
 
 False

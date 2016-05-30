@@ -219,7 +219,10 @@ namespace TableConstruct
             if (constructItem == null)
                 return;
 
-            constructItem.SetDefaultByType(e.AddedItems[0].ToString());
+            if (e.AddedItems.Count != 0)
+            {
+                constructItem.SetDefaultByType(e.AddedItems[0].ToString());
+            }
         }
 
         public void RefreshType()

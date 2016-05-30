@@ -4,17 +4,17 @@
 library
 C#
 .cs
-D:\Project\C#Project\MyProject\WPF\TableModifierV2\TableModifier\TableModifierV2\TableConstruct\obj\Debug\
+D:\工具\TableModifierV2\TableConstruct\obj\Debug\
 TableConstruct
 none
 false
 DEBUG;TRACE
 
-12-9912359
+14-1017197289
 
-40-1579235168
-16286093815
-base\Pages\BaseListPanel.xaml;base\Pages\TypePanel.xaml;Construct\Pages\ConstructItemInfo.xaml;Construct\Pages\ConstructItemInfoPanel.xaml;Construct\Pages\ConstructItemList.xaml;Construct\Pages\ConstructPage.xaml;Construct\Pages\ConstructFileList.xaml;Construct\Pages\ConstructTableInfoPanel.xaml;Enums\Pages\EnumerateItems.xaml;GlobalConfig\Pages\ShowTableConfig.xaml;InnerStruct\Pages\InnerStructItemList.xaml;InnerStruct\Pages\InnerStructInfos.xaml;
+42-1091530159
+161590357018
+base\Pages\BaseListPanel.xaml;base\Pages\TypePanel.xaml;base\Pages\BaseTreePanel.xaml;Construct\Pages\ConstructItemInfo.xaml;Construct\Pages\ConstructItemInfoPanel.xaml;Construct\Pages\ConstructItemList.xaml;Construct\Pages\ConstructPage.xaml;Construct\Pages\ConstructFileList.xaml;Construct\Pages\ConstructTableInfoPanel.xaml;Enums\Pages\EnumerateItems.xaml;GlobalConfig\Pages\SelectProject.xaml;GlobalConfig\Pages\ShowTableConfig.xaml;InnerStruct\Pages\InnerStructItemList.xaml;InnerStruct\Pages\InnerStructInfos.xaml;
 
 False
 

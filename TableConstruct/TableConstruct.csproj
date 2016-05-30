@@ -77,6 +77,9 @@
     <Compile Include="base\Pages\TypePanel.xaml.cs">
       <DependentUpon>TypePanel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="base\Pages\BaseTreePanel.xaml.cs">
+      <DependentUpon>BaseTreePanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Construct\Pages\ConstructItemInfoPanel.xaml.cs">
       <DependentUpon>ConstructItemInfoPanel.xaml</DependentUpon>
     </Compile>
@@ -109,6 +112,9 @@
       <DependentUpon>EnumerateItems.xaml</DependentUpon>
     </Compile>
     <Compile Include="GlobalConfig\Logic\TableGlobalConfig.cs" />
+    <Compile Include="GlobalConfig\Pages\SelectProject.xaml.cs">
+      <DependentUpon>SelectProject.xaml</DependentUpon>
+    </Compile>
     <Compile Include="GlobalConfig\Pages\ShowTableConfig.xaml.cs">
       <DependentUpon>ShowTableConfig.xaml</DependentUpon>
     </Compile>
@@ -141,6 +147,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="base\Pages\BaseTreePanel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Construct\Pages\ConstructItemInfo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -168,6 +178,10 @@
     <Page Include="Enums\Pages\EnumerateItems.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="GlobalConfig\Pages\SelectProject.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="GlobalConfig\Pages\ShowTableConfig.xaml">
       <Generator>MSBuild:Compile</Generator>

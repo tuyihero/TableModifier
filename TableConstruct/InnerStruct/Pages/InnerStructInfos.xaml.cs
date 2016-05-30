@@ -116,7 +116,7 @@ namespace TableConstruct
 
         private void Button_Save(object sender, RoutedEventArgs e)
         {
-            WriteInnerStruct.WriteAll();
+            WriteInnerStruct.WriteProject();
         }
 
         private void Button_NewInfo(object sender, RoutedEventArgs e)

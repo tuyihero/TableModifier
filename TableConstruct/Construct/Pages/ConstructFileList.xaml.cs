@@ -22,6 +22,7 @@ namespace TableConstruct
     /// </summary>
     public partial class ConstructFileList : UserControl, PathChildFrame
     {
+
         public ConstructFileList()
         {
             InitializeComponent();
@@ -29,6 +30,8 @@ namespace TableConstruct
             ConstructFold.Instance.InitFold();
             //顺便初始化内容
             LinkList.ItemsSource = ConstructFold.Instance.ConstructFiles; 
+
+            
         }
 
         #region 接口
@@ -56,11 +59,22 @@ namespace TableConstruct
             string newName = DialogMessage.DialogString();
             if (!string.IsNullOrEmpty(newName))
             {
-                ConstructFold.Instance.CreateNewFile(newName);
+                var fileInfo = ConstructFold.Instance.CreateNewFile(newName);
+
+                BaseTreePanel.TreeData pathNode = sender as BaseTreePanel.TreeData;
+                if (pathNode != null)
+                {
+                    fileInfo.Path = pathNode.Path + "\\" + pathNode.Name;
+                    pathNode.Children.Add(fileInfo);
+                }
+                else
+                {
+                    LinkList.TreeDataCollection.Add(fileInfo);
+                }
             }
         }
 
-        private void LinkList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void LinkList_SelectionChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
         {
             ConstructFile fileInfo = LinkList.SelectedItem as ConstructFile;
             if (fileInfo == null)

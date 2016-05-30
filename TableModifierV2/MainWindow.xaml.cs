@@ -10,4 +10,5 @@ public partial class MainWindow : ModernWindow
     public MainWindow()
     {
     }
+
 }

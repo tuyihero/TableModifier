@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<root>
-  <TemplatePath>./TableCodeTemplate</TemplatePath>
-  <CodePath>D:\UnityWork\LoveLetter\trunk\Assets\GameLogic\Script\Core\Table</CodePath>
-  <CodeTablePath>./Assets/Resources/Tables/</CodeTablePath>
-  <ResTablePath>D:\UnityWork\LoveLetter\trunk\Assets\Resources\Tables</ResTablePath>
-</root>

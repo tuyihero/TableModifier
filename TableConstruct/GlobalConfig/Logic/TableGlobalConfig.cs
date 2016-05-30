@@ -43,6 +43,23 @@ namespace TableConstruct
         #endregion
 
         #region 属性
+        private string _ProjectPath;
+        public string ProjectPath
+        {
+            get
+            {
+                return _ProjectPath;
+            }
+            set
+            {
+                _ProjectPath = value;
+                _CodePath = _ProjectPath + TableGlobalDefine.ELEMENT_DEFAULT_CODE_PATH;
+                _ConstructTablePath = _ProjectPath + TableGlobalDefine.ELEMENT_DEFAULT_CONSTRUCT_PATH;
+                _ResTablePath = _ProjectPath + TableGlobalDefine.ELEMENT_DEFAULT_RESOURCE_PATH;
+                OnPropertyChanged("ProjectPath");
+            }
+        }
+
         private string _TemplatePath;
         public string TemplatePath 
         {
@@ -72,17 +89,17 @@ namespace TableConstruct
             }
         }
 
-        private string _CodeTablePath;
-        public string CodeTablePath
+        private string _ConstructTablePath;
+        public string ConstructTablePath
         {
             get
             {
-                return _CodeTablePath;
+                return _ConstructTablePath;
             }
             set
             {
-                _CodeTablePath = value;
-                OnPropertyChanged("CodeTablePath");
+                _ConstructTablePath = value;
+                OnPropertyChanged("ConstructTablePath");
             }
         }
 
@@ -99,13 +116,41 @@ namespace TableConstruct
                 OnPropertyChanged("ResTablePath");
             }
         }
+
+        private string _SelectedProject;
+        public string SelectedProject
+        {
+            get
+            {
+                return _SelectedProject;
+            }
+            set
+            {
+                _SelectedProject = value;
+                OnPropertyChanged("SelectedProject");
+            }
+        }
+
+        private List<string> _ProjectFileNames = new List<string>();
+        public List<string> ProjectFileNames
+        {
+            get
+            {
+                return _ProjectFileNames;
+            }
+        }
         #endregion
 
         #region 逻辑
 
         public void Init()
         {
-            ReadConfig.ReadAll();
+            ReadConfig.ReadAllFiles();
+        }
+
+        public void InitProject()
+        {
+            ReadConfig.ReadProjectConfig(SelectedProject);
             if (string.IsNullOrEmpty(_TemplatePath))
             {
                 TemplatePath = TableGlobalDefine.ELEMENT_DEFAULT_TEMPLATE_PATH;
@@ -114,7 +159,7 @@ namespace TableConstruct
 
         public void SavePath()
         {
-            WriteConfig.WriteAll();
+            WriteConfig.WriteProjectConfig(SelectedProject);
         }
 
         #endregion

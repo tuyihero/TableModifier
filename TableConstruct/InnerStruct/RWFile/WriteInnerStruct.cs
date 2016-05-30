@@ -10,7 +10,7 @@ namespace TableConstruct
 {
     public class WriteInnerStruct
     {
-        public static void WriteAll()
+        public static void WriteProject()
         {
             //ConstructFold.Instance.RemoveFiles.ForEach((file) =>
             //{
@@ -25,7 +25,7 @@ namespace TableConstruct
 
         public static void DeleteFile(string name)
         {
-            string configPath = InnerStructConfig.INNERSTRUCT_FOLD_PATH + "/" + name + ".xml";
+            string configPath = TableGlobalConfig.Instance.SelectedProject + InnerStructConfig.INNERSTRUCT_FOLD_PATH + "/" + name + ".xml";
             File.Delete(configPath);
         }
 
@@ -43,7 +43,7 @@ namespace TableConstruct
             if (file == null)
                 return;
 
-            string configPath = InnerStructConfig.INNERSTRUCT_FOLD_PATH + "/" + file.Name + ".xml";
+            string configPath = TableGlobalConfig.Instance.ConstructTablePath + InnerStructConfig.INNERSTRUCT_FOLD_PATH + "/" + file.Name + ".xml";
             XmlDocument xmlDoc = new XmlDocument();
             if (!File.Exists(configPath))
             {

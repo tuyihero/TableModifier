@@ -16,13 +16,22 @@
             <Button Click="Button_New" Width="80" Height="25" Margin="0,0,10,0">New</Button>
             <Button Click="Button_Save" Width="80" Height="25" Margin="0,0,10,0">Save</Button>
         </StackPanel>
-        <local:BaseListPanel x:Name="LinkList"
+        <!--<local:BaseListPanel x:Name="LinkList"
                              SelectEvent="LinkList_SelectionChanged"
                              RemoveEvent="MenuItem_Remove"
                              RenameEvent="MenuItem_Rename"
                              Grid.Row="1"
                              >
             
-        </local:BaseListPanel>
+        </local:BaseListPanel>-->
+        <local:BaseTreePanel x:Name="LinkList"
+                             SelectEvent="LinkList_SelectionChanged"
+                             RemoveEvent="MenuItem_Remove"
+                             RenameEvent="MenuItem_Rename"
+                             NewItemEvent="Button_New"
+                             Grid.Row="1"
+                             >
+
+        </local:BaseTreePanel>
     </Grid>
 </UserControl>

@@ -5,16 +5,16 @@
                   xmlns:kcr="http://tablemodify.com/KeyChanger"
                   Title="MainWindow"
                   WindowState ="Maximized"
-                  ContentSource="/Pages/UserControl1.xaml"
+                  ContentSource="/TableConstruct;component/GlobalConfig/Pages/SelectProject.xaml"
                   FontFamily="宋体">
     <mui:ModernWindow.TitleLinks>
         <mui:Link DisplayName="Settings" Source="/Forms/Pages/Setting.xaml" />
     </mui:ModernWindow.TitleLinks>
 
     <mui:ModernWindow.MenuLinkGroups>
-        <mui:LinkGroup DisplayName="Welcome" >
+        <mui:LinkGroup DisplayName="项目" >
             <mui:LinkGroup.Links>
-                <mui:Link DisplayName="INTRODUCTION" Source="/Forms/Pages/WelcomePage.xaml" />
+                <mui:Link DisplayName="选择" Source="/TableConstruct;component/GlobalConfig/Pages/SelectProject.xaml" />
             </mui:LinkGroup.Links>
         </mui:LinkGroup>
         <mui:LinkGroup DisplayName="表格结构" >

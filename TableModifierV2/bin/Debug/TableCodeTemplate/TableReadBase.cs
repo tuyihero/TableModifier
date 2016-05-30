@@ -81,7 +81,7 @@ namespace Tables
 
         public static string GetTableText(string tableName)
         {
-            var tableAsset = GameBase.GameCore.Instance.ResourceManager.GetTable(tableName);
+            var tableAsset = Resources.Load<TextAsset>("Tables/" + tableName);
             if (tableAsset != null)
             {
                 return tableAsset.text;

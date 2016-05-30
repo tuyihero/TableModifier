@@ -10,6 +10,8 @@
              mc:Ignorable="d" 
              d:DesignHeight="300" d:DesignWidth="300">
     <StackPanel Name="canvas">
-
+        <Button Width="200" Height="60" Content="test" Click="Button_Click">
+            
+        </Button>
     </StackPanel>
 </UserControl>

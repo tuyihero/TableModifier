@@ -58,18 +58,19 @@ namespace TableContent
              ContentFile contentFile = new ContentFile(construct);
             contentFile.Name = construct.Name;
             contentFile.IsInit = true;
+            contentFile.Path = construct.Path;
 
             ReadContentFile(construct, ref contentFile);
         }
 
         public static void ReadContentFile(ConstructFile construct, ref ContentFile contentFile)
         {
-            string path = TableGlobalConfig.Instance.ResTablePath + "/" + construct.Name + ".csv";
+            string path = TableGlobalConfig.Instance.ResTablePath + "\\" + construct.Path + construct.Name + ".csv";
             if (!string.IsNullOrEmpty(construct.OldName))
             {
-                path = TableGlobalConfig.Instance.ResTablePath + "/" + construct.OldName + ".csv";
+                path = TableGlobalConfig.Instance.ResTablePath + "\\" + construct.Path + construct.OldName + ".csv";
             }
-
+            
             if (!File.Exists(path))
             {
                 CreateNewFile(construct);
@@ -177,26 +178,27 @@ namespace TableContent
         {
             ContentFile contentFile = new ContentFile(construct);
             contentFile.Name = construct.Name;
+            contentFile.Path = construct.Path;
 
-            ContentRow row = new ContentRow(contentFile);
-            foreach (ConstructItem constructItem in construct.ConstructItems)
-            {
-                for (int i = 0; i < constructItem.ItemRepeat; ++i)
-                {
-                    ContentItem contentItem = new ContentItem(row, constructItem, i + 1);
-                    if (constructItem.ItemCode == ConstructConfig.NEW_FILE_DEFAULT_ID_CODE)
-                    {
-                        contentItem.Value = ContentConfig.CONTENT_INIT_DEFAULT_ID;
-                    }
-                    else
-                    {
-                        contentItem.Value = "";
-                    }
-                    row.AddContentItem(contentItem);
-                }
-            }
+            //ContentRow row = new ContentRow(contentFile);
+            //foreach (ConstructItem constructItem in construct.ConstructItems)
+            //{
+            //    for (int i = 0; i < constructItem.ItemRepeat; ++i)
+            //    {
+            //        ContentItem contentItem = new ContentItem(row, constructItem, i + 1);
+            //        if (constructItem.ItemCode == ConstructConfig.NEW_FILE_DEFAULT_ID_CODE)
+            //        {
+            //            contentItem.Value = ContentConfig.CONTENT_INIT_DEFAULT_ID;
+            //        }
+            //        else
+            //        {
+            //            contentItem.Value = "";
+            //        }
+            //        row.AddContentItem(contentItem);
+            //    }
+            //}
 
-            contentFile.AddContentRow(row);
+            //contentFile.AddContentRow(row);
 
             TableContentManager.Instance.AddContentFile(contentFile);
         }

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <TemplatePath>./TableCodeTemplate</TemplatePath>
+  <CodePath>D:\unityProject\StickMan\StickMan\Assets\Tables\Code</CodePath>
+  <CodeTablePath>D:\unityProject\StickMan\StickMan\Assets\Tables\Construct</CodeTablePath>
+  <ResTablePath>D:\unityProject\StickMan\StickMan\Assets\Resources\Tables</ResTablePath>
+  <ProjectPath>D:\unityProject\StickMan\StickMan\Assets</ProjectPath>
+</root>

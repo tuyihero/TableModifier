@@ -1,0 +1,5 @@
+D:\工具\TableModifierV2\Collada4Res\bin\Debug\Collada4Res.dll
+D:\工具\TableModifierV2\Collada4Res\bin\Debug\Collada4Res.pdb
+D:\工具\TableModifierV2\Collada4Res\obj\Debug\Collada4Res.dll
+D:\工具\TableModifierV2\Collada4Res\obj\Debug\Collada4Res.pdb
+D:\工具\TableModifierV2\Collada4Res\obj\Debug\Collada4Res.csprojResolveAssemblyReference.cache

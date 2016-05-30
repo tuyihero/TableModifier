@@ -10,9 +10,9 @@ namespace TableConstruct
 {
     public class WriteConfig
     {
-        public static void WriteAll()
+        public static void WriteProjectConfig(string projectName)
         {
-            string configPath = TableGlobalDefine.CONFIG_FOLD_PATH + "/" + TableGlobalDefine.CONFIG_FILE_NAME + ".xml";
+            string configPath = TableGlobalDefine.CONFIG_FOLD_PATH + "/" + projectName + ".xml";
             XmlDocument xmlDoc = new XmlDocument();
             if (!File.Exists(configPath))
             {
@@ -38,11 +38,15 @@ namespace TableConstruct
             root.AppendChild(xmlText);
 
             xmlText = xmlDoc.CreateElement(TableGlobalDefine.ELEMENT_CODE_TABLE_PATH);
-            xmlText.InnerText = TableGlobalConfig.Instance.CodeTablePath;
+            xmlText.InnerText = TableGlobalConfig.Instance.ConstructTablePath;
             root.AppendChild(xmlText);
 
             xmlText = xmlDoc.CreateElement(TableGlobalDefine.ELEMENT_RES_TABLE_PATH);
             xmlText.InnerText = TableGlobalConfig.Instance.ResTablePath;
+            root.AppendChild(xmlText);
+
+            xmlText = xmlDoc.CreateElement(TableGlobalDefine.ELEMENT_PROJECT_PATH);
+            xmlText.InnerText = TableGlobalConfig.Instance.ProjectPath;
             root.AppendChild(xmlText);
 
             xmlDoc.Save(configPath);

@@ -10,14 +10,15 @@ namespace TableConstruct
 {
     public class ReadEnuminfos
     {
-        public static void ReadAll()
+        public static void ReadProject()
         {
-            if (!Directory.Exists(EnuminfoConfig.ENUMINFO_FOLD_PATH))
+            string foldPath = TableGlobalConfig.Instance.ConstructTablePath + EnuminfoConfig.ENUMINFO_FOLD_PATH;
+            if (!Directory.Exists(foldPath))
             {
-                Directory.CreateDirectory(EnuminfoConfig.ENUMINFO_FOLD_PATH);
+                Directory.CreateDirectory(foldPath);
             }
 
-            DirectoryInfo TheFolder = new DirectoryInfo(EnuminfoConfig.ENUMINFO_FOLD_PATH);
+            DirectoryInfo TheFolder = new DirectoryInfo(foldPath);
             foreach (FileInfo fileInfo in TheFolder.GetFiles())
             {
                 if (fileInfo.Extension == ".xml")

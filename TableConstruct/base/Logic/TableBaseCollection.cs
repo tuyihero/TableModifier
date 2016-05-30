@@ -67,7 +67,14 @@ namespace TableConstruct
         {
             foreach (var link in Items)
             {
-                action(link);
+                if (link.ChilCollection.Count == 0)
+                {
+                    action(link);
+                }
+                else
+                {
+                    link.ChilCollection.ForEach(action);
+                }
             }
         }
 
@@ -78,10 +85,21 @@ namespace TableConstruct
                 
             foreach (var item in Items)
             {
-                string itemName = _NameField.GetValue(item) as string;
-                if (itemName == name)
+                if (item.ChilCollection.Count == 0)
                 {
-                    return item;
+                    string itemName = _NameField.GetValue(item) as string;
+                    if (itemName == name)
+                    {
+                        return item;
+                    }
+                }
+                else
+                {
+                    var childItem = item.ChilCollection.GetByName(name);
+                    if (childItem != null)
+                    {
+                        return childItem;
+                    }
                 }
             }
             
@@ -95,12 +113,19 @@ namespace TableConstruct
 
             foreach (var item in Items)
             {
-                string itemName = _NameField.GetValue(item) as string;
-
-                if (itemName == name)
+                if (item.ChilCollection.Count == 0)
                 {
-                    Remove(item);
-                    break;
+                    string itemName = _NameField.GetValue(item) as string;
+
+                    if (itemName == name)
+                    {
+                        Remove(item);
+                        break;
+                    }
+                }
+                else
+                {
+                    item.ChilCollection.RemoveByName(name);
                 }
             }
 

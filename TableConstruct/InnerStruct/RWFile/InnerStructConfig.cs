@@ -8,7 +8,7 @@ namespace TableConstruct
 {
     public class InnerStructConfig
     {
-        public static string INNERSTRUCT_FOLD_PATH = "./InnerStructInfo";
+        public static string INNERSTRUCT_FOLD_PATH = "/InnerStructInfo";
 
         //新建XML信息
         public const string INIT_VERSION_STR = "1.0";

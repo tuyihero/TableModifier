@@ -73,7 +73,7 @@ namespace TableContent
             WriteContent.CreateFileNotExist();
         }
 
-        private void LinkList_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void LinkList_SelectionChanged(object sender, RoutedPropertyChangedEventArgs<object> e)
         {
             ContentFile fileInfo = LinkList.SelectedItem as ContentFile;
             if (fileInfo == null)

@@ -24,7 +24,7 @@ namespace TableContent
         {
             if (!string.IsNullOrEmpty(file.ConstructFile.OldName))
             {
-                string oldPath = TableGlobalConfig.Instance.ResTablePath + "/" + file.ConstructFile.OldName + ".csv";
+                string oldPath = TableGlobalConfig.Instance.ResTablePath + "\\" + file.ConstructFile.Path + file.ConstructFile.OldName + ".csv";
                 if (!string.IsNullOrEmpty(oldPath))
                 {
                     File.Delete(oldPath);
@@ -34,12 +34,18 @@ namespace TableContent
                 WriteConstruct.WriteFileOldName(file.ConstructFile, "");
             }
 
-            if(!file.IsNeedWrite())
-                return;
+            //if(!file.IsNeedWrite())
+            //    return;
 
-            string path = TableGlobalConfig.Instance.ResTablePath + "/" + file.ConstructFile.Name + ".csv";
+            string path = TableGlobalConfig.Instance.ResTablePath + "\\" + file.ConstructFile.Path + "\\" + file.ConstructFile.Name + ".csv";
             if (string.IsNullOrEmpty(path))
                 return;
+
+            string diretPath = TableGlobalConfig.Instance.ResTablePath + "\\" + file.ConstructFile.Path;
+            if (!Directory.Exists(diretPath))
+            {
+                Directory.CreateDirectory(diretPath);
+            }
 
             File.Delete(path);
 
@@ -61,14 +67,14 @@ namespace TableContent
         {
             foreach (ConstructFile constructFile in ConstructFold.Instance.ConstructFiles)
             {
-                string path = TableGlobalConfig.Instance.ResTablePath + "/" + constructFile.Name + ".csv";
+                string path = TableGlobalConfig.Instance.ResTablePath + "\\" + constructFile.Path + constructFile.Name + ".csv";
                 if (File.Exists(path))
                     continue;
 
                 ContentFile contentFile = new ContentFile(constructFile);
                 contentFile.Name = constructFile.Name;
 
-                contentFile.GreateRow("empty");
+                //contentFile.GreateRow("empty");
 
                 TableContentManager.Instance.AddContentFile(contentFile);
             }

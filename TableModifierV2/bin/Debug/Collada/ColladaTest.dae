@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<COLLADA>
+  <asset>
+    <unit name="meter" meter="1" />
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_geometries>
+    <geometry id="ColladaTest-mesh" name="ColladaTest">
+      <mesh>
+        <source id="ColladaTest-mesh-positions">
+          <float_array id="ColladaTest-mesh-positions-array" count="24">1 1 -1 1 -1 -1 -1 -0.9999998 -1 -0.9999997 1 -1 1 0.9999995 1 1 -1.000001 1 -1 -0.9999997 1 -1 1 1 </float_array>
+          <technique_common>
+            <accessor source="#ColladaTest-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ColladaTest-mesh-normals">
+          <float_array id="ColladaTest-mesh-normals-array" count="36">0 0 -1 0 0 1 1 0 -2.38419E-07 0 -1 -4.76837E-07 -1 2.38419E-07 -1.49012E-07 2.68221E-07 1 2.38419E-07 0 0 -1 0 0 1 1 -5.96046E-07 3.27825E-07 -4.76837E-07 -1 0 -1 2.38419E-07 -1.19209E-07 2.08616E-07 1 0 </float_array>
+          <technique_common>
+            <accessor source="#ColladaTest-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ColladaTest-mesh-vertices">
+          <input semantic="POSITION" source="#ColladaTest-mesh-positions" />
+        </vertices>
+        <polylist material="Material-material" count="12">
+          <input semantic="VERTEX" source="#ColladaTest-mesh-vertices" offset="0" />
+          <input semantic="NORMAL" source="#ColladaTest-mesh-normals" offset="1" />
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 2 0 3 0 7 1 5 1 4 1 4 2 1 2 0 2 5 3 2 3 1 3 2 4 7 4 3 4 0 5 7 5 4 5 0 6 1 6 2 6 7 7 6 7 5 7 4 8 5 8 1 8 5 9 6 9 2 9 2 10 6 10 7 10 0 11 3 11 7 11 </p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="ColladaTest" name="ColladaTest" type="NODE">
+        <matrix sid="transform">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </matrix>
+        <instance_geometry url="#ColladaTest-mesh" name="ColladaTest">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material-material" target="#Material-material" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene" />
+  </scene>
+</COLLADA>
