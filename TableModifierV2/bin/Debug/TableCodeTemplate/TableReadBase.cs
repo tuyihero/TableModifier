@@ -81,10 +81,11 @@ namespace Tables
 
         public static string GetTableText(string tableName)
         {
-            var tableAsset = Resources.Load<TextAsset>("Tables/" + tableName);
-            if (tableAsset != null)
+            var tableAsset = ResourceManager.Instance.GetTableStr(tableName);
+            //var tableAsset = GameBase.ResourceManager.Instance.GetTable(tableName);
+            if (!string.IsNullOrEmpty(tableAsset))
             {
-                return tableAsset.text;
+                return tableAsset;
             }
             else
             {

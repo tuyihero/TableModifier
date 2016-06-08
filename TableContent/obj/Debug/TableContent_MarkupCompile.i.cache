@@ -16,5 +16,5 @@ DEBUG;TRACE
 17-1035163209
 base\ContentItemBase.xaml;base\MultiTableControl.xaml;base\ItemVector3Control.xaml;Pages\ContentDataGrid.xaml;Pages\ContentDataTab.xaml;Pages\ContentFileList.xaml;Pages\ContentItemInfo.xaml;
 
-False
+True
 

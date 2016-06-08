@@ -351,7 +351,7 @@ namespace TableCodeCreator
             builder.Append("            Records = new Dictionary<string, " + constructFile.Name + "Record>();\n");
             builder.Append("            if(isPath)\n");
             builder.Append("            {\n");
-            builder.Append("                string[] lines = File.ReadAllLines(pathOrContent, Encoding.Default);\n");
+            builder.Append("                string[] lines = File.ReadAllLines(pathOrContent);\n");
             builder.Append("                lines[0] = lines[0].Replace(\"\\r\\n\", \"\\n\");\n");
             builder.Append("                ParserTableStr(string.Join(\"\\n\", lines));\n");
             builder.Append("            }\n");
@@ -525,13 +525,13 @@ namespace TableCodeCreator
                     //parseBuilder.Append("                    pair.Value.Step.Add(TableReader." + constructItem.ItemType2[0].Name + ".GetRecord(pair.Value.ValueStr[" + dataIdx + "]));\n");
                     parseBuilder.Append("                    pair.Value." + constructItem.ItemCode
                         + parseValueStart + " TableReader." + constructItem.ItemType2[0].Name + ".GetRecord(pair.Value.ValueStr["
-                        + dataIdx + "])" + parseValueEnd + ";");
+                        + dataIdx + "])" + parseValueEnd + ";\n");
                     parseBuilder.Append("                }\n");
-                    parseBuilder.Append("                else\n");
-                    parseBuilder.Append("                {\n");
-                    parseBuilder.Append("                    pair.Value." + constructItem.ItemCode
-                        + parseValueStart + "null" + parseValueEnd + ";\n");
-                    parseBuilder.Append("                }");
+                    //parseBuilder.Append("                else\n");
+                    //parseBuilder.Append("                {\n");
+                    //parseBuilder.Append("                    pair.Value." + constructItem.ItemCode
+                    //    + parseValueStart + "null" + parseValueEnd + ";\n");
+                    //parseBuilder.Append("                }");
                 }
                 else
                 {
