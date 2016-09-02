@@ -527,17 +527,20 @@ namespace TableCodeCreator
                         + parseValueStart + " TableReader." + constructItem.ItemType2[0].Name + ".GetRecord(pair.Value.ValueStr["
                         + dataIdx + "])" + parseValueEnd + ";\n");
                     parseBuilder.Append("                }\n");
-                    //parseBuilder.Append("                else\n");
-                    //parseBuilder.Append("                {\n");
-                    //parseBuilder.Append("                    pair.Value." + constructItem.ItemCode
-                    //    + parseValueStart + "null" + parseValueEnd + ";\n");
-                    //parseBuilder.Append("                }");
+                    parseBuilder.Append("                else\n");
+                    parseBuilder.Append("                {\n");
+                    parseBuilder.Append("                    pair.Value." + constructItem.ItemCode
+                        + parseValueStart + "null" + parseValueEnd + ";\n");
+                    parseBuilder.Append("                }");
                 }
                 else
                 {
-                    parseBuilder.Append("                pair.Value." + constructItem.ItemCode
+                    parseBuilder.Append("                if(!string.IsNullOrEmpty(pair.Value.ValueStr[" + dataIdx + "]))\n");
+                    parseBuilder.Append("                {\n");
+                    parseBuilder.Append("                   pair.Value." + constructItem.ItemCode
                         + parseValueStart + " TableReadBase.ParseMultiTable(pair.Value.ValueStr["
-                        + dataIdx + "])" + parseValueEnd + ";");
+                        + dataIdx + "])" + parseValueEnd + ";\n");
+                    parseBuilder.Append("                }");
                 }
             }
 
@@ -584,7 +587,7 @@ namespace TableCodeCreator
 
                 //readBuilder.Append("            " + constructFile.Name
                 //    + " = new " + constructFile.Name + "(\"" + TableGlobalConfig.Instance.CodeTablePath + constructFile.Name + ".csv\");\n");
-                string filePath = constructFile.Path.Replace("\\", "/") + constructFile.Name;
+                string filePath = constructFile.Path.Replace("\\", "/") + constructFile.Name;//暂时不用路径，直接通过名字索引
                 readBuilder.Append("            " + constructFile.Name
                     + " = new " + constructFile.Name + "(TableReadBase.GetTableText(\"" + filePath + "\"), false);\n");
 

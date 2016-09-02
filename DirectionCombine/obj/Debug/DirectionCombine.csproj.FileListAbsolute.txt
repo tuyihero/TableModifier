@@ -34,3 +34,15 @@ D:\工具\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine_MarkupComp
 D:\工具\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.g.resources
 D:\工具\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.dll
 D:\工具\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.pdb
+D:\tools\TableModifierV2\DirectionCombine\bin\Debug\DirectionCombine.dll
+D:\tools\TableModifierV2\DirectionCombine\bin\Debug\DirectionCombine.pdb
+D:\tools\TableModifierV2\DirectionCombine\bin\Debug\FirstFloor.ModernUI.dll
+D:\tools\TableModifierV2\DirectionCombine\bin\Debug\FrameStyle.dll
+D:\tools\TableModifierV2\DirectionCombine\bin\Debug\FrameStyle.pdb
+D:\tools\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.csprojResolveAssemblyReference.cache
+D:\tools\TableModifierV2\DirectionCombine\obj\Debug\Pages\DirectionPathControl.baml
+D:\tools\TableModifierV2\DirectionCombine\obj\Debug\Pages\DirectionPathControl.g.cs
+D:\tools\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine_MarkupCompile.cache
+D:\tools\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.g.resources
+D:\tools\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.dll
+D:\tools\TableModifierV2\DirectionCombine\obj\Debug\DirectionCombine.pdb

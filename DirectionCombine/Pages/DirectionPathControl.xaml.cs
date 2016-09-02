@@ -21,19 +21,32 @@ namespace DirectionCombine
     /// </summary>
     public partial class DirectionPathControl : UserControl
     {
+        #region 
+
+        private static DirectionPathControl _Instance;
+        public static DirectionPathControl Instance
+        {
+            get
+            {
+                return _Instance;
+            }
+        }
+
+        #endregion
         public DirectionPathControl()
         {
             InitializeComponent();
+            _Instance = this;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             string path = PathControl.GetPath();
-            if(!System.IO.Directory.Exists(path))
+            if (!System.IO.Directory.Exists(path))
                 return;
 
             DirectoryInfo directInfo = new DirectoryInfo(path);
-            var files = directInfo.GetFiles("*.*", SearchOption.AllDirectories);
+            var files = directInfo.GetFiles("*.unity3d", SearchOption.AllDirectories);
             string destDirect = System.IO.Path.Combine(path, "CombineFiles");
             int idx = 0;
             foreach (FileInfo filePath in files)
@@ -56,6 +69,57 @@ namespace DirectionCombine
                     }
                 }
             }
+
+        }
+
+        private void Button_Flip(object sender, RoutedEventArgs e)
+        {
+            string path = FlipPathControl.GetPath();
+            if (!System.IO.Directory.Exists(path))
+                return;
+
+            ImgOperate.Instance.FlipAllImages(path);
+        }
+
+        private void Button_Alpha(object sender, RoutedEventArgs e)
+        {
+            string path = AlphaPathControl.GetPath();
+            if (!System.IO.Directory.Exists(path))
+                return;
+
+            ImgOperate.Instance.CombineImageAlphas(path);
+        }
+
+        private void Button_ChangeName(object sender, RoutedEventArgs e)
+        {
+            string path = ChangeName.GetPath();
+            //if (!System.IO.Directory.Exists(path))
+            //    return;
+
+            //CppToCSharp.Instance.ChangeTabFold(path);
+            ImgOperate.Instance.ChangeAllFileToShader(path);
+            //ImgOperate.Instance.ClassifyFile(path);
+        }
+
+        private void Button_SplitImg(object sender, RoutedEventArgs e)
+        {
+            string path = SplitImg.GetPath();
+            //if (!System.IO.Directory.Exists(path))
+            //    return;
+
+            //CppToCSharp.Instance.ChangeTabFold(path);
+            ImgOperate.Instance.SplitFold(path);
+            //ImgOperate.Instance.ClassifyFile(path);
+        }
+
+        public void ShowDebugMsg(string debugMsg)
+        {
+            DebugMsg_TextBlock.Text = debugMsg;
+        }
+
+        public void ShowErrorMsg(string errorMsg)
+        {
+            ErrorMsg_TextBlock.Text = errorMsg;
         }
     }
 }

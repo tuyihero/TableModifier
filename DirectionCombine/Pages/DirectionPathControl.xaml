@@ -9,11 +9,37 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <tfs:FilePathControl Name="PathControl" Grid.Row="0">
-
         </tfs:FilePathControl>
-        <Button Click="Button_Click_1" Grid.Row="1" Width="200" Height="25">合并</Button>
+        <Button Click="Button_Click_1" Grid.Row="0" Width="200" Height="25" Margin="10,18,-70,10">合并</Button>
+
+        <tfs:FilePathControl Name="FlipPathControl" Grid.Row="1">
+        </tfs:FilePathControl>
+        <Button Click="Button_Flip" Grid.Row="1" Width="200" Height="25" Margin="10,18,-70,10">翻转</Button>
+
+        <tfs:FilePathControl Name="AlphaPathControl" Grid.Row="2">
+        </tfs:FilePathControl>
+        <Button Click="Button_Alpha" Grid.Row="2" Width="200" Height="25" Margin="10,18,-70,10">结合</Button>
+
+        <tfs:FilePathControl Name="ChangeName" Grid.Row="3">
+        </tfs:FilePathControl>
+        <Button Click="Button_ChangeName" Grid.Row="3" Width="200" Height="25" Margin="10,18,-70,10">改名</Button>
+
+        <tfs:FilePathControl Name="SplitImg" Grid.Row="4">
+        </tfs:FilePathControl>
+        <Button Click="Button_SplitImg" Grid.Row="4" Width="200" Height="25" Margin="10,18,-70,10">分割</Button>
+
+        <TextBlock Name="DebugMsg_TextBlock" Grid.Row="5" Margin="10,10,10,10">debug msg</TextBlock>
+
+        <TextBlock Name="ErrorMsg_TextBlock" Grid.Row="6" Margin="10,10,10,10">error msg</TextBlock>
     </Grid>
 </UserControl>

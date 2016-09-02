@@ -155,6 +155,10 @@ namespace TableContent
         {
             for (int i = 0; i < constructItem.ItemRepeat; ++i)
             {
+                if (constructItem.ItemCode == "rate")
+                {
+                    int test = 1 + 1;
+                }
                 ContentItem contentItem = new ContentItem(row, constructItem, i + 1);
                 string columnName = constructItem.Name;
                 if (constructItem.ItemRepeat > 1)

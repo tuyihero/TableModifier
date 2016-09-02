@@ -83,8 +83,8 @@ namespace TableConstruct
                     item.ItemDesc = childElement.InnerText;
             }
 
-            if (string.IsNullOrEmpty(item.Name))
-                return null;
+            //if (string.IsNullOrEmpty(item.ItemCode))
+            //    return null;
 
             return item;
         }

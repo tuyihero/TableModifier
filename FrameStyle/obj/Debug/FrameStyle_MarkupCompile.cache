@@ -4,7 +4,7 @@
 library
 C#
 .cs
-D:\工具\TableModifierV2\FrameStyle\obj\Debug\
+D:\tools\TableModifierV2\FrameStyle\obj\Debug\
 FrameStyle
 none
 false
@@ -13,7 +13,7 @@ DEBUG;TRACE
 141555141040
 
 16-147091343
-14-436681998
+142109212067
 Assets\ControlsResource.xaml;Assets\PathBaseFrame.xaml;Assets\PathContentFrame.xaml;Assets\PathContentTransition.xaml;Assets\TabContentFrame.xaml;Assets\BoarderStyle.xaml;Assets\TextBlockStyle.xaml;Assets\DialogStyle.xaml;Assets\ListContentFrame.xaml;Assets\ListBaseFrame.xaml;Assets\ComboBoxItemStyle.xaml;Assets\ErrorStyle.xaml;Assets\FilePathControl.xaml;Themes\Generic.xaml;
 
 False

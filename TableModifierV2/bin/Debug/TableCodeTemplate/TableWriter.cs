@@ -12,7 +12,7 @@ namespace Tables
         public static void WriteTable(TableFileBase tableFile)
         {
             string path = "./Assets/Resources/Tables/" + tableFile.GetType().Name + ".csv";
-            string[] lines = File.ReadAllLines(path, Encoding.Default);
+            string[] lines = File.ReadAllLines(path);
             lines[0] = lines[0].Replace("\r\n", "\n");
 
             StringReader rdr = new StringReader(string.Join("\n", lines));

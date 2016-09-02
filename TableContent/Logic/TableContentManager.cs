@@ -39,6 +39,8 @@ namespace TableContent
 
         public List<string> RemoveFiles = new List<string>();
 
+        private bool _IsInit = false;
+
         #endregion
 
         #region 方法
@@ -50,19 +52,23 @@ namespace TableContent
 
         public void InitFiles()
         {
-            ContentFiles = new ContentFileCollection();
-            ReadContent.ReadAll();
-
-            foreach (ContentFile contentFile in ContentFiles)
+            if (!_IsInit)
             {
-                foreach (ContentRow contentRow in contentFile.ContentRow)
+                ContentFiles = new ContentFileCollection();
+                ReadContent.ReadAll();
+
+                foreach (ContentFile contentFile in ContentFiles)
                 {
-                    foreach (ContentItem contentItem in contentRow._ContentItems)
+                    foreach (ContentRow contentRow in contentFile.ContentRow)
                     {
-                        contentItem.CheckValidate();
-                        contentItem.SetTableReference();
+                        foreach (ContentItem contentItem in contentRow._ContentItems)
+                        {
+                            contentItem.CheckValidate();
+                            contentItem.SetTableReference();
+                        }
                     }
                 }
+                _IsInit = true;
             }
         }
 

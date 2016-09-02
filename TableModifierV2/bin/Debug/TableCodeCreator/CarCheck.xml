@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <TemplatePath>./TableCodeTemplate</TemplatePath>
+  <CodePath>D:\project\CarRebuildCheck\project\Assets\Tables\Code</CodePath>
+  <CodeTablePath>D:\project\CarRebuildCheck\project\Assets\Tables\Construct</CodeTablePath>
+  <ResTablePath>D:\project\CarRebuildCheck\project\Assets\Resources\Tables</ResTablePath>
+  <ProjectPath>D:\project\CarRebuildCheck\project\Assets</ProjectPath>
+</root>
